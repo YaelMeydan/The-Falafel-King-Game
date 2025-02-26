@@ -25,9 +25,9 @@ function startGame() {
     orderCount++;
 
     if (orderCount >= 4) {
-        timer = 30; 
+        timer = 60; 
     } else {
-        timer = 30; // timer should be 60 seconds originally, reduced time for class presentation.
+        timer = 120; 
     }
     
     localStorage.setItem('orderCount', orderCount.toString());
@@ -47,7 +47,7 @@ function startTimer() {
             clearInterval(countdown);
             endGame();
         }
-    }, 500);
+    }, 1000);
 }
 
 function generateOrder() {
