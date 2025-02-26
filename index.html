@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles.css">
+    <title>The Falafel King Game</title> 
+</head>
+<body>
+    <div id="landing">
+        <h1>Welcome</h1>
+        <p>Fill orders using dragging the ingredients into the order and click "Complete Order".</p>
+        <input type="text" id="username" placeholder="Enter Username" />
+        <button id="startBtn">Start Game</button>
+    </div>
+    <div id="gameArea" style="display:none;">
+        <h2 id="playerName"></h2>
+        <div id="scoreAndTimer">
+            <span>Score: <span id="score">0</span></span>
+            <span>Time Left: <span id="timer">120</span> seconds</span>
+        </div>
+        <div id="inventory"></div>
+        <div id="orders"></div>
+    </div>
+    <div id="scoreboard" style="display:none;"></div>
+    <script src="dist/game.js"></script>
+</body>
+</html>
